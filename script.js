@@ -54,7 +54,7 @@ no.addEventListener("click", function () {
   message.style.left = "";
   message.style.top = "";
   msgHome.insertBefore(message, msgNext);
-  message.textContent = "Okay... but you will miss the end of the world.";
+  message.textContent = "Okay.... sige.... Bye tootoot ka oips! :<";
 
   celebrate.classList.add("hidden");
   doompic.classList.add("hidden");
