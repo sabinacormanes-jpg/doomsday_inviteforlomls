@@ -10,6 +10,7 @@ const msgNext = message.nextSibling;
 
 let caught = 0;
 let accepted = false;
+let declined = false;
 
 const noMessages = [
   "Agi Daw na sayop rakag tulpok!",
@@ -43,17 +44,26 @@ yes.addEventListener("click", function () {
 });
 
 no.addEventListener("click", function () {
+  declined = true;
+
+  no.style.left = "";
+  no.style.top = "";
   yes.style.transform = "none";
-  caught = 0;
-  message.textContent = "Okay... sige... BYE TOOTOOT KA OIPS :<";
-  doompic.classList.add("hidden");
+
+  message.classList.remove("floating");
+  message.style.left = "";
+  message.style.top = "";
+  msgHome.insertBefore(message, msgNext);
+  message.textContent = "Okay... but you will miss the end of the world.";
+
   celebrate.classList.add("hidden");
+  doompic.classList.add("hidden");
   sad.classList.remove("hidden");
 });
 
 let lastRun = 0;
 function runAway(event) {
-  if (accepted) return;
+  if (accepted || declined) return;
   if (caught >= 40) return;
 
   const now = Date.now();
