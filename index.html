@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doomsday Invite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="envelope" class="envelope">
+    <svg class="lines" viewBox="0 0 640 480" preserveAspectRatio="none">
+     <polygon points="0,0 640,0 320,270" fill="#00643D" stroke="#9FA9B2" stroke-width="3" vector-effect="non-scaling-stroke" />
+     <line x1="0" y1="480" x2="290" y2="230" stroke="#9FA9B2" stroke-width="3" vector-effect="non-scaling-stroke" />
+     <line x1="640" y1="480" x2="350" y2="230" stroke="#9FA9B2" stroke-width="3" vector-effect="non-scaling-stroke" />
+    </svg>
+    <img src="logo.png" class="seal" alt="Doom logo">
+    <p class="tap">Tap the seal please 💚</p>
+  </div>
+
+  <div class="card hidden" id="letter">
+    <p class="small">CAN I ASK YOU OUT AND WATCH</p>
+    <h1>DOOMSDAY</h1>
+    <p class="watch"> WITH ME!💚🍿</p>
+    <p class="details">Date: December 18 (Friday) 5:00 PM</p>
+    <p class="details">Place: SM Cinema</p>
+
+    <button id="yes">Ano g?!</button>
+    <button id="no">Dele Lang (bezi)</button>
+    <p id="message"></p>
+    <img src="celebrate.gif" class="celebrate hidden" id="celebrate" alt="Celebration">
+    <img src="sad.gif" class="celebrate hidden" id="sad" alt="Sad">
+    <img src="doom-flowers.png" class="doompic" id="doompic" alt="Doom holding flowers">
+  </div>
+  <audio id="music" src="music.mp3" loop></audio>
+  <button id="musicBtn" class="music-btn hidden">🔊</button> 
+  <div id="smoke" class="smoke"></div> 
+  <script src="script.js"></script>
+</body>
+</html>
