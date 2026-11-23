@@ -21,16 +21,16 @@ const noMessages = [
   "What if i close nalang ni tibway kung sig valivad? agi daw",
   "Awa nagtika Dako na hinuon ang 'Ano g?!'. TULPOKA NALANG GAD! 😭",
   "VAYOOOOOOOOT :<",
-  "Okay, Edi don't balakajan"
-  "Bitaw.... :>"
-  "Please :<"
-  ":< :< :< :<"
-  "JEBBAAAAALLL"
-  "Sure?"
-  "FR FR? :<"
-  "Sure najud? :<"
-  "Promise nana?"
-  "Sige nalang oips"
+  "Okay, Edi don't balakajan",
+  "Bitaw.... :>",
+  "Please :<",
+  ":< :< :< :<",
+  "JEBBAAAAALLL",
+  "Sure?",
+  "FR FR? :<",
+  "Sure najud? :<",
+  "Promise nana?",
+  "Sige nalang oips",
 ];
 
 yes.addEventListener("click", function () {
@@ -293,3 +293,4 @@ function tick() {
 }
 
 tick();
+
