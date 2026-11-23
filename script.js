@@ -30,7 +30,7 @@ const noMessages = [
   "FR FR? :<",
   "Sure najud? :<",
   "Promise nana?",
-  "Sige nalang oips",
+  "Sige nalang oips"
 ];
 
 yes.addEventListener("click", function () {
@@ -293,4 +293,3 @@ function tick() {
 }
 
 tick();
-
