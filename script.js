@@ -114,8 +114,8 @@ function runAway(event) {
     }
   }
 
-  message.textContent =
-    noMessages[Math.min(Math.floor(caught / 4), noMessages.length - 1)];
+    message.textContent =
+    noMessages[Math.min(caught - 1, noMessages.length - 1)];
 
   document.body.appendChild(message);
   message.classList.remove("floating");
@@ -284,3 +284,4 @@ function tick() {
 }
 
 tick();
+
